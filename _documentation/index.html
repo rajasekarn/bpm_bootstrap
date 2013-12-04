@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+	<head lang="en">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title>Start Up Admin Template Documentation</title>
+		<!-- Documentation CSS -->
+		<link rel="stylesheet" href="assets/screen.css" type="text/css" media="screen, projection">
+
+		
+		
+		<script type="text/javascript" src="assets/scripts/shCore.js"></script>
+		<script type="text/javascript" src="assets/scripts/shBrushXml.js"></script>
+		<link type="text/css" rel="stylesheet" href="assets/shCoreDefault.css"/>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+	
+	</head>
+
+	<body>
+		
+		<div class="container">
+		
+			<h3 class="center alt">&ldquo;Start Up&rdquo; Documentation by &ldquo;Srinu Basava&rdquo; v1.0</h3>		
+			
+			<hr>		
+
+			<h1 class="center">&ldquo;Start Up- Responsive Admin Dashboard&rdquo;</h1>
+			
+			<div class="borderTop">
+				<div class="span-6 colborder info prepend-1">
+					<p class="prepend-top">
+						<strong>
+							Created: 21/05/2013<br>
+							By: Srinu Basava<br>
+							<a href="http://themeforest.net/user/srinubasava">Contact me</a>
+						</strong>
+					</p>
+				</div>
+		
+				<div class="span-12 last">
+					<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email me via my user page contact form <a href="http://themeforest.net/user/srinubasava">here</a>.  Thanks so much!</p>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<h2 id="toc" class="alt">Table of Contents</h2>
+			<ol class="alpha">
+				<li>HTML Structure
+					<ol>
+						<li><a href="#XX0">Layout</a>
+						<li><a href="#XX1">Header</a>
+						<li><a href="#XX2">Grid</a></li>
+					</ol>
+				</li>
+				<br>
+				<li><a href="#YY">CSS Files and Structures</a></li>
+				<br>
+				<li><a href="#ZZ">Javascript files</a></li>
+			</ol>
+			
+			<hr>
+			
+			<p>Start Up has a number of different layouts. It can be a fixed or fluid width and it can have a sidebar or be full width. You can combine these in many ways. This is done easily by adding/changing a stylesheet. The layout uses the default 12 column, fluid layout that generally comes with the bootstrap default css file. </p> 
+
+			<p>Start Up also scales down automatically to mobile devices of different resolutions. It works perfectly on an iPhone for example (without changing the HTML of the page).</p>
+
+
+			<h1><strong>A) HTML Structure</strong></h1>
+			<hr>
+			<br><br>
+			<h2 id="XX0"><strong>A. 1) Main Layout</strong> - <a href="#toc">top</a></h2>
+			
+			<pre class="prettyprint lines brush: xml">
+				<!-- Layout Starts -->
+				<div class="container-fluid"> <!-- Bootstrap responsive layout Container -->
+					<div class="left-sidebar" class="hidden-phone hidden-tablet"> <!-- Leftside bar start -->
+						
+					</div><!-- Leftside bar end -->
+		      
+					<div class="dashboard-wrapper"><!-- Dashboard start -->
+						<div id="main-nav" class="hidden-phone hidden-tablet"> <!-- Main Nav start -->
+						</div><!-- Main Nav end -->
+						<div class="main-container"> <!-- Your dashboard content area -->
+
+							<!-- Row fluid for fluid layout -->
+							<div class="row-fluid">
+								<div class="span12">
+									<div class="widget no-margin">
+										<div class="widget-header">
+											<div class="title">
+												<span class="fs1" aria-hidden="true" data-icon="&#xe053;"></span> Upcoming Events
+											</div>
+											<div class="tools pull-right"></div>
+										</div>
+										<div class="widget-body">
+		                  <div id='calendar'></div> <!-- Content -->
+		                </div>
+		              </div>	
+								</div>
+							</div>
+							<!-- Row fluid for fluid layout end -->
+
+							<!-- or if you are looking for fixed layout use below format -->
+							<div class="row">
+								<div class="span12">
+									<!-- Your content here -->
+								</div>
+							</div>
+							<!-- For fixed layout end -->
+
+						</div> <!-- Your dashboard content area end -->
+					</div> <!-- Dashboard end -->
+				</div> <!-- Bootstrap responsive layout Container end -->
+			</pre>
+
+			<hr>
+
+			<h2 id="XX1"><strong>A. 2) Header</strong> - <a href="#toc">top</a></h2>
+			
+			<pre class="prettyprint lines brush: xml">
+				<!-- Header start -->
+				<header>
+					<a href="index.html" class="logo">Start Up Admin</a> <!-- Logo -->
+					<div id="mini-nav"> <!-- Header right side nav bar -->
+						<ul class="hidden-phone">
+							<li><a href="#">Tasks</a></li>
+							<li><a href="#">Signup's</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</div><!-- Header right side nav bar end -->
+				</header>
+				<!-- end header -->
+			</pre>
+
+			<hr>
+
+			<h2 id="XX2"><strong>A. 3) Grid</strong> - <a href="#toc">top</a></h2>
+
+			<pre class="prettyprint lines brush: xml">
+				<!-- Dashboard start -->
+				<div class="dashboard-wrapper">
+					<div class="main-container"> <!-- Your dashboard content area -->
+
+						<!-- Row fluid single column  -->
+						<div class="row-fluid">
+							<div class="span12">
+								<!-- Your content here -->
+							</div>
+						</div>
+						<!-- Row fluid single column end -->
+
+
+						<!-- Row fluid two columns -->
+						<div class="row-fluid">
+							<div class="span8">
+								<!-- Your content here -->
+							</div>
+
+							<div class="span4">
+								<!-- Your content here -->
+							</div>
+
+						</div>
+						<!-- Row fluid two columns end -->
+
+						<!-- Row fluid three columns -->
+						<div class="row-fluid">
+							<div class="span6">
+								<!-- Your content here -->
+							</div>
+
+							<div class="span3">
+								<!-- Your content here -->
+							</div>
+
+							<div class="span3">
+								<!-- Your content here -->
+							</div>
+
+						</div>
+						<!-- Row fluid three columns end -->
+
+
+						<!-- Or if you are looking for fixed layout use below format -->
+						<div class="row">
+							<div class="span12">
+								<!-- Your content here -->
+							</div>
+						</div>
+						<!-- For fixed layout end -->
+
+					</div> <!-- Your dashboard content area end -->
+				</div><!-- Dashboard end -->
+			</pre>
+
+			<hr>
+
+			<h1 id="YY"><strong>B) CSS</strong> - <a href="#toc">top</a></h1>		
+			<pre class="prettyprint lines brush: xml">
+
+				<!-- bootstrap-editable css for editable inputs -->
+				<link rel="stylesheet" href="css/bootstrap-editable">
+				<link rel="stylesheet" href="css/select2">
+
+				<!-- Calendar -->
+				<link rel="stylesheet" href="css/fullcalendar">
+				<link rel="stylesheet" href="css/style">
+
+				<!-- Main CSS file and Included main.scss file -->
+				<link rel="stylesheet" href="css/main">
+				<link rel="stylesheet" href="css/main.scss">
+
+				<p>Important - If you would like to change the theme go to main.scss and change the variables and compile it.</p>
+
+				<!-- Morris Graphs -->
+				<link rel="stylesheet" href="css/morris">
+
+				<!-- Nvd-charts -->
+				<link rel="stylesheet" href="css/nvd-charts">
+
+				<!-- timepicker -->
+				<link rel="stylesheet" href="css/timepicker">
+
+				<!-- wysiwyg editor -->
+				<link rel="stylesheet" href="css/wysiwyg/bootstrap-wysihtml5">
+				<link rel="stylesheet" href="css/wysiwyg/wysiwyg-color">
+			</pre>
+
+			<p>This template was built using <a href="http://twitter.github.com/bootstrap/"> Twitter Bootstrap </a>- which means you have access to a wide variety of built in CSS from the main.scss file (that has already been tested across major browsers by the Twitter Bootstrap group).</p>
+
+			<p>If you would like to edit a specific section of the site, simply find the appropriate label in the Scss file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+
+			<ul>
+				<li><strong>Variables for theming</strong> - <em>(Line 14 - 24)</em></li>
+				<li><strong>Mixins</strong> - <em>(Line 27 - 133)</em></li>
+				<li><strong>Bootstrap CSS</strong> - <em>(Line 136 - 5332)</em></li>
+
+				<!-- Sass written by myself -->
+				<li><strong>Sass written by myself starts from</strong> - <em>(Line 5337)</em></li>
+				<li><strong>For no margin</strong> - <em>(Line 5337</em>)</li>
+				<li><strong>For no padding</strong> - <em>(Line 5340)</em></li>
+				<li><strong>For right align text</strong> - <em>(Line 5343)</em></li>
+				<li><strong>For center align text</strong> - <em>(Line 5346)</em></li>
+				<li><strong>For background colors</strong> - <em>(Line 5355 - 5373)</em></li>
+				<li><strong>Signin container</strong> - <em>(Line 5376)</em></li>
+				<li><strong>Header</strong> - <em>(Line 5418)</em></li>
+				<li><strong>Mini Nav</strong> - <em>(Line 5439)</em></li>
+				<li><strong>Dashboard wrapper</strong> - <em>(Line 5576)</em></li>
+				<li><strong>Main container - content area</strong> - <em>(Line 5586)</em></li>
+				<li><strong>Widget inside main container</strong> - <em>(Line 5599)</em></li>
+				<li><strong>Main navigation</strong> - <em>(Line 5664)</em></li>
+				<li><strong>Stylish HR</strong> - <em>(Line 5720)</em></li>
+				<li><strong>Breadcrumb added by me</strong> - <em>(Line 5739)</em></li>
+				<li><strong>Timeline </strong> - <em>(Line 5807)</em></li>
+				<li><strong>About task </strong> - <em>(Line 5893)</em></li>
+				<li><strong>Current stats</strong> - <em>(Line 5918)</em></li>
+				<li><strong>Fancy tooltip wrapper</strong> - <em>(Line 5943)</em></li>
+				<li><strong>Daterange picker</strong> - <em>(Line 6060)</em></li>
+				<li><strong>Scrollbar</strong> - <em>(Line 6242)</em></li>
+				<li><strong>Icon Sizes - Icomoon small to large</strong> - <em>(Line 6343 - 6355)</em></li>
+				<li><strong>Stats count</strong> - <em>(Line 6312)</em></li>
+				<li><strong>Messages container</strong> - <em>(Line 6478)</em></li>
+				<li><strong>Tasks</strong> - <em>(Line 6530)</em></li>
+				<li><strong>To Do container</strong> - <em>(Line 6574)</em></li>
+				<li><strong>Data tables</strong> - <em>(Line 6664)</em></li>
+				<li><strong>Invoice</strong> - <em>(Line 6754)</em></li>
+				<li><strong>404 page </strong> - <em>(Line 6083)</em></li>
+				<li><strong>Footer</strong> - <em>(Line 6838)</em></li>
+			</ul>
+
+			<hr>
+			
+			<h1 id="ZZ">C) JavaScript - <a href="#toc">top</a></h1>
+			
+			<pre class="prettyprint lines brush: xml">
+		  	
+				<!-- Default custom javascript for all pages -->
+				<script src="js/theming.js"></script>
+    <script src="js/custom.js"></script>
+
+				<!-- Custom Javascript for forms -->
+				<script src="js/custom-forms.js"></script>
+
+				<!-- Custom Javascript for graphs -->
+				<script src="js/custom-graphs.js"></script>
+
+				<!-- Custom Javascript for index page -->
+				<script src="js/custom-index.js"></script>
+
+				<!-- Custom Javascript for tables -->
+				<script src="js/custom-tables.js"></script>
+
+				<!-- Bootstrap editable min -->
+				<script src="js/bootstrap-editable.min.js"></script>
+				<script src="js/select2.js"></script>
+				<script src="js/moment.js"></script>
+
+				<!-- Bootstrap timepicker -->
+				<script src="js/bootstrap-timepicker.js"></script>
+
+				<!-- Bootstrap JS -->
+				<script src="js/bootstrap.js"></script>
+
+				<!-- Daterange picker -->
+				<script src="js//date-picker/daterangepicker.js"></script>
+				<script src="js//date-picker/date.js"></script>
+
+				<!-- All flot jas files -->
+				<script src="js//flot/jquery.flot.selection.js"></script>
+				<script src="js//flot/jquery.flot.resize.min.js"></script>
+				<script src="js//flot/jquery.flot.js"></script>
+
+				<!-- jQuery fullcalendar -->
+				<script src="js/fullcalendar.js"></script>
+
+				<!-- html5 trunk -->
+				<script src="js/html5-trunk.js"></script>
+
+				<!-- jquery ui 1.8.23.custom.min -->
+				<script src="js/jquery-ui-1.8.23.custom.min.js"></script>
+
+				<!-- jquery data Tables -->
+				<script src="js/jquery dataTables.js"></script>
+
+				<!-- jquery min -->
+				<script src="js/jquery.min.js"></script>
+
+				<!-- jquery sparkline charts -->
+				<script src="js/jquery.sparkline.js"></script>
+
+				<!-- Morris charts and graphs -->
+				<script src="js/morris/morris.js"></script>
+				<script src="js/morris/raphael-min.js"></script>
+
+				<!-- Tiny scrollbar -->
+				<script src="js/tiny-scrollbar.js"></script>
+
+				<!-- Wysiwyg editor -->
+				<script src="js/wysiwyg/... .js"></script>
+		  </pre>
+		
+		</div>
+	</body>
+</html>
