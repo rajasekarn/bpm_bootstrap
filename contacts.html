@@ -589,12 +589,15 @@
 
           <div class="page-header">
             <div class="pull-left">
-              <h2>Inbox</h2>
+              <h2>Contacts</h2>
             </div>
              <div id="grid_header_links" align="right" style="padding-right:10px;">
-               <a id="deleteMails" onclick="deleteSelectedMails('inbox')" href="javascript:void(0);" style="padding:10px;">Delete</a>
+               <a id="deleteMails" onclick="deleteSelectedMails('inbox')" href="javascript:void(0);" style="padding:10px;">Create Contact</a>
+               <a id="deleteMails" onclick="deleteSelectedMails('inbox')" href="javascript:void(0);" style="padding:10px;">Delete Contact</a>
                <span class="simple-search pad-R10">Search </span>
                <input id="mailSearchBox" type="text" onkeyup="mailGridSearch('_INBOX_LIST');" name="mailSearchBox" style="height: 15px;">
+               <a id="deleteMails" onclick="deleteSelectedMails('inbox')" href="javascript:void(0);" style="padding:10px;">Advance Search</a>
+               <a id="deleteMails" onclick="deleteSelectedMails('inbox')" href="javascript:void(0);" style="padding:10px;">Export CSV</a>
             </div>
           </div>
 
@@ -607,22 +610,23 @@
                     <input type="checkbox" value="">
                     </th>
                     <th style="width:15%">
-                      Status
+                      First Name
                     </th>
                     <th style="width:20%" class="hidden-phone">
-                      From
+                      Last Name
                     </th>
                     <th style="width:25%" class="hidden-phone">
-                      Subject
+                      Email
                     </th>
                     <th style="width:10%" class="hidden-phone">
-                      Date
+                      Mobile
                     </th>
                   </tr>
                 </thead>
               </table>
             </div>           
           </div>
+
         </div>
       </div><!-- Indox-container -->
     </div><!-- container-fluid -->
