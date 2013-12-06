@@ -33,17 +33,99 @@
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <a href="home.html" class="logo">EasyTech</a>
-      <div id="mini-nav">
-        
-        <div class="clearfix"></div>
-      </div>
+        <header>
+      <a href="index.html" class="logo">StartUP</a>
+		<div id="mini-nav">
+			<ul class="hidden-phone">
+				<li class="dropdown"><a data-toggle="dropdown"
+					class="dropdown-toggle" href=""> Message <span
+						class="caret icon-white"></span>
+				</a>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="inbox.html" id="inbox">Inbox</a></li>
+						<li><a href="composemail.html" id="composemail">Compose</a></li>
+						<li><a href="draft.html" id="draft">Draft</a></li>
+						<li><a href="sentMail.html" id="sentMail">Sent Mail</a></li>
+						<li><a href="sentLeter.html" id="sentLeter">Sent Leter</a></li>
+					</ul>
+				<li class="dropdown"><a data-toggle="dropdown"
+					class="dropdown-toggle" href=""> Mail <span
+						class="caret icon-white"></span>
+				</a>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="inbox.html" id="inbox">Inbox</a></li>
+						<li><a href="composemail.html" id="composemail">Compose</a></li>
+						<li><a href="draft.html" id="draft">Draft</a></li>
+						<li><a href="sentMail.html" id="sentMail">Sent Mail</a></li>
+						<li><a href="contacts.html" id="contacts">Contacts</a></li>
+						<li><a href="setting.html" id="setting">Setting</a></li>
+					</ul></li>
+				<li class="dropdown"><a data-toggle="dropdown"
+					class="dropdown-toggle" href=""> Document <span
+						class="caret icon-white"></span>
+				</a>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="#" id="documents">Documents</a></li>
+					</ul></li>
+				<li><a href="#help" data-toggle="modal" data-original-title="">
+						Todos </a></li>
+				<li class="dropdown"><a data-toggle="dropdown"
+					class="dropdown-toggle" href=""> Schedule <span
+						class="caret icon-white"></span>
+				</a>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="#" id="catendar">Calendar</a></li>
+						<li><a href="#" id="manageSchedule">Manage Schedule</a></li>
+					</ul></li>
+				<li><a href="#documentation" data-toggle="modal"
+					data-original-title=""> Documentation </a>
+				</li>
+				<li class="dropdown"><a data-toggle="dropdown"
+					class="dropdown-toggle" href=""> Theming <span
+						class="caret icon-white"></span>
+				</a>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="#" id="default">Default</a></li>
+						<li><a href="#" id="facebook">Facebook</a></li>
+						<li><a href="#" id="foursquare">Foursquare</a></li>
+						<li><a href="#" id="google-plus">Google+</a></li>
+						<li><a href="#" id="instagram">Instagram</a></li>
+						<li><a href="#" id="whitesmoke">White Smoke</a></li>
+						<li><a href="#" id="tumblr">Tumblr</a></li>
+						<li><a href="#" id="flickr">Flickr</a></li>
+						<li><a href="#" id="linkedin">LinkedIn</a></li>
+						<li><a href="#" id="twitter">Twitter</a></li>
+						<li><a href="#" id="youtube">YouTube</a></li>
+						<li><a href="#" id="vimeo">Vimeo</a></li>
+						<li><a href="#" id="pinterest">Pinterest</a></li>
+						<li><a href="#" id="grey">Grey</a></li>
+					</ul></li>
+				<li><a href="faq.html"><span class="fs1" aria-hidden="true"
+						data-icon="&#xe03b;"></span></a></li>
+				<li class="dropdown"><a data-toggle="dropdown"
+					class="dropdown-toggle" href=""> <span class="fs1"
+						aria-hidden="true" data-icon="&#xe090;"></span>
+				</a>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="#" id="profile">Profile</a></li>
+						<li><a href="#" id="changePassword">Change Password</a></li>
+					</ul></li>
+				<li><a href="login.html"><span class="fs1"
+						aria-hidden="true" data-icon="&#xe0b1;"></span></a></li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
     </header>
     <div class="container-fluid">
       <div class="left-sidebar hidden-tablet hidden-phone">
         <div class="user-details">
-                   
+          <div class="user-img">
+            <img src="img/user-avatar.png" class="avatar" alt="Avatar">
+          </div>
+          <div class="welcome-text">
+            <span>Welcome</span>
+            <p class="name">Mr. Srinu Basava</p>
+          </div>
         </div>
         <div class="content">
           <div id="accordion1" class="accordion no-margin">
@@ -323,7 +405,7 @@
             
             <li>
               <a href="home.html" class="selected">
-                <span class="fs1" aria-hidden="true" data-icon="&#xe0b8;"></span> HOME
+                <span class="fs1" aria-hidden="true" ><img src="img/home_icon2.png"/></span> HOME
               </a>
               <ul>
                 <li>
@@ -354,7 +436,7 @@
             </li>
             <li>
               <a href="process.html">
-                <span class="fs1" aria-hidden="true" data-icon="&#xe096;"></span>PROCESS
+                <span class="fs1" aria-hidden="true"><img src="img/process_icon.png"/></span>PROCESS
               </a>
               <ul>
                 <li>
@@ -379,7 +461,7 @@
             </li>
             <li>
               <a href="ui-element.html">
-                <span class="fs1" aria-hidden="true" data-icon="&#xe0a5;"></span> ADMIN
+                <span class="fs1" aria-hidden="true" ><img src="img/admin_icon.png"/></span> ADMIN
               </a>
               <ul>
                 <li>
@@ -401,7 +483,7 @@
             </li>
             <li>
               <a href="report.html">
-                <span class="fs1" aria-hidden="true" data-icon="&#xe14a;"></span> REPORTS
+                <span class="fs1" aria-hidden="true"><img src="img/reports_icon.png"/></span> REPORTS
               </a>
             </li>
            </ul>
@@ -409,6 +491,211 @@
         </div>
 
         <div class="main-container">
+        <div class="navbar hidden-desktop">
+            <div class="navbar-inner">
+              <div class="container">
+                <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </a>
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                  <ul class="nav">
+                    <li>
+                      <a href="home.html">HOME</a>
+                    </li>
+                    <li>
+                      <a href="#">MANAGE LAYOUT</a>
+                    </li>
+                    <li>
+                      <a href="#">NOTICE LIST</a>
+                    </li>
+                    <li>
+                      <a href="#">CREATE NOTICE</a>
+                    </li>
+                    <li>
+                      <a href="#">NEWS LIST</a>
+                    </li>
+                    <li>
+                      <a href="#">CREATE NEWS</a>
+                    </li>
+                    <li>
+                      <a href="#">CREATE TODO LIST</a>
+                    </li>
+                    <li>
+                      <a href="#">TODO LIST</a>
+                    </li>
+                    <li>
+                      <a href="#">MY BUCKET</a>
+                    </li>
+                    <li>
+                      <a href="#">MY INVOLVEMENTS</a>
+                    </li>
+                    <li>
+                      <a href="#">WAITING LIST</a>
+                    </li>
+                    <li>
+                      <a href="#">CALENDER</a>
+                    </li>
+                    <li>
+                      <a href="#">COMMON OPINION</a>
+                    </li>
+                    <li>
+                      <a href="#">AGENCY SETTING</a>
+                    </li>
+                    <li>
+                      <a href="#">USER MODULE</a>
+                    </li>
+                    <li>
+                      <a href="home.html">TODO LIST</a>
+                    </li>
+                    <li>
+                      <a href="home.html">WORKFLOW INSTANCES</a>
+                    </li>
+                    <li>
+                      <a href="home.html">home</a>
+                    </li>
+                    <li>
+                      <a href="home.html">MANAGE</a>
+                    </li>
+                    <li>
+                      <a href="home.html">DONE LIST</a>
+                    </li>
+                    <li>
+                      <a href="home.html">TO READ</a>
+                    </li>
+                    <li>
+                      <a href="home.html">READ LIST</a>
+                    </li>
+                    <li>
+                      <a href="home.html">PROCESS ARCHIVE</a>
+                    </li>
+                    <li>
+                      <a href="home.html">MY INVOLVEMENTS</a>
+                    </li>
+                    <li>
+                      <a href="home.html">WAITING LIST</a>
+                    </li>
+                    <li>
+                      <a href="home.html">PROCESS</a>
+                    </li>
+                    <li>
+                      <a href="home.html">MONITOR PROCESSES</a>
+                    </li>
+                    <li>
+                      <a href="home.html">CUSTOM FUNCTION</a>
+                    </li>
+                    <li>
+                      <a href="home.html">MANAGE MODULES</a>
+                    </li>
+                    <li>
+                      <a href="home.html">DATA SHEET</a>
+                    </li>
+                    <li>
+                      <a href="home.html">DOCUMENT TO BE DONE</a>
+                    </li>
+                    <li>
+                      <a href="home.html">DONE DOCUMENT LIST</a>
+                    </li>
+                    <li>
+                      <a href="home.html">DOCUMENT TO BE READ</a>
+                    </li>
+                    <li>
+                      <a href="home.html">READ DOCUMENT LIST</a>
+                    </li>
+                    <li>
+                      <a href="home.html">MY DOCUMENT</a>
+                    </li>
+                    <li>
+                      <a href="home.html">DOCUMENT STATISTICS</a>
+                    </li>
+                    <li>
+                      <a href="home.html">MY INSTANCES</a>
+                    </li>
+                    <li>
+                      <a href="home.html">JOURNAL</a>
+                    </li>
+                    <li>
+                      <a href="home.html">MY MONITOR PROCESS</a>
+                    </li>
+                    <li>
+                      <a href="home.html">BUSINESS STATISTICS</a>
+                    </li>
+                    <li>
+                      <a href="home.html">DEPARTMENT STATISTICS</a>
+                    </li>
+                    <li>
+                      <a href="home.html">PERSONAL STATISTICS</a>
+                    </li>
+                    <li>
+                      <a href="home.html">FLOW STATISTICS</a>
+                    </li>
+                    <li>
+                      <a href="home.html">MANAGE USERS</a>
+                    </li>
+                    <li>
+                      <a href="home.html">MANAGE ROLES</a>
+                    </li>
+                    <li>
+                      <a href="home.html">MANAGE GROUPS</a>
+                    </li>
+                    <li>
+                      <a href="home.html">MANAGE DEPARTMENT</a>
+                    </li>
+                    <li>
+                      <a href="home.html">MANAGE MENUS</a>
+                    </li>
+                    <li>
+                      <a href="home.html">MANAGE DATA</a>
+                    </li>
+                     <li>
+                      <a href="home.html">MANAGE VIEW LIST</a>
+                    </li>
+                    <li>
+                      <a href="home.html">DICTIONARY</a>
+                    </li>
+                    <li>
+                      <a href="home.html">UPLOAD CUSTOM ICON</a>
+                    </li>
+                    <li>
+                      <a href="home.html">SMS LIST</a>
+                    </li>
+                    <li>
+                      <a href="home.html">COMPOSE SMS</a>
+                    </li>
+                    <li>
+                      <a href="home.html">UPLOAD LOGO</a>
+                    </li>
+                    <li>
+                      <a href="home.html">MANAGE SYSCONFIG</a>
+                    </li>
+                    <li>
+                      <a href="home.html">MAIL CONFIGURATION</a>
+                    </li>
+                   
+                    <li>
+                      <a href="home.html">MANAGE TIMING TASK</a>
+                    </li>
+                     <li>
+                      <a href="home.html">MANAGE LAYOUT</a>
+                    </li>
+                     <li>
+                      <a href="home.html">MANAGE WIDGET</a>
+                    </li>
+                     <li>
+                      <a href="home.html">MANAGE QUICK</a>
+                    </li>
+              
+              
+                    <li>
+                      <a href="#">NAVIGATION</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="navbar hidden-desktop">
             <div class="navbar-inner">
               <div class="container">
