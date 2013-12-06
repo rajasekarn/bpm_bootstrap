@@ -473,95 +473,107 @@
 						</div>
 					</div>
 				</div>
+				<div class="page-header">
+					<div class="pull-left">
+						<h2>Table List</h2>
+					</div>
+					<div class="clearfix"></div>
+				</div>
 
 				<div class="row-fluid">
 					<div class="span12">
-						<div class="widget">
-							<div class="widget-header">
-								<div class="title">
-									<span class="fs1" aria-hidden="true"></span> Table List
+
+						<div class="span3">
+							<div class="widget">
+								<div class="widget-header">
+									<div class="title">
+										<span class="fs1" aria-hidden="true""></span> Tables
+									</div>
+								</div>
+								<div class="widget-body">
+									<div class="tab-widget">
+										<div id="all_tables"
+											style="overflow: auto; border: 1px solid gray; height: 536px;">
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="span8">
+							<div class="widget">
+								<div class="widget-header">
+									<div class="title">
+										<span class="fs1" aria-hidden="true"></span> Query
+									</div>
+								</div>
+								<div class="widget-body">
+									<div class="Query">
+									<div id="all_tables"
+											style="overflow: auto; border: 1px solid gray; height: 100px;">
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+
+
+
+							<div class="widget">
+								<div class="widget-header">
+									<div class="title">
+										<span class="fs1" aria-hidden="true"></span> Table Detail
+									</div>
+								</div>
+								<div class="widget-body">
+									<div class="Table Detail">
+									<div id="all_tables"
+											style="overflow: auto; border: 1px solid gray; height: 340px;">
+										</div>
+										<div class="clearfix"></div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!-- Indox-container -->
 				</div>
-				<div class="row-fluid">
-					<div class="span12">
-						<div id="all_tables" class="span3"
-							style="width: 20%; overflow: auto; border: 1px solid gray; height: 536px;">
-						</div>
-						
-								<table width="80%">
-									
-									<tbody>
-										<tr>
-											<td><span class="floatLeft fontSize14 pad-L15 pad-T10">
-											<b>Query</b>
-											</span></td>
-										</tr>
-										<tr>
-											<td style="padding-left: 10px;"><textarea id="queryArea"
-													style="width: 98%" cols="100" rows="5"
-													placeholder="SELECT table_alias_name.COLUMN_NAME AS column_alias_name FROM TABLE_NAME AS table_alias_name"></textarea>
-											</td>
-										</tr>
-										<tr align="right">
-											<td style="padding-right: 7px;">
-												<button id="saveButton"
-													class="btn btn-primary checkQueryButton padding0 line-height0"
-													onclick="processToExecuteQuery();" name="save"
-													type="submit">Execute Query</button>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+				<!-- container-fluid -->
 
-	</div>
-	</div>
-	<!-- Indox-container -->
-	</div>
-	<!-- container-fluid -->
+				<script src="js/jquery.min.js"></script>
+				<script src="js/bootstrap.js"></script>
+				<script src="js/moment.js"></script>
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/moment.js"></script>
+				<!-- Flot charts -->
+				<script src="js/flot/jquery.flot.js"></script>
+				<script src="js/flot/jquery.flot.selection.js"></script>
+				<script src="js/flot/jquery.flot.pie.js"></script>
 
-	<!-- Flot charts -->
-	<script src="js/flot/jquery.flot.js"></script>
-	<script src="js/flot/jquery.flot.selection.js"></script>
-	<script src="js/flot/jquery.flot.pie.js"></script>
+				<!-- Google Visualization JS -->
+				<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
-	<!-- Google Visualization JS -->
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+				<!-- Easy Pie Chart JS -->
+				<script src="js/pie-charts/jquery.easy-pie-chart.js"></script>
 
-	<!-- Easy Pie Chart JS -->
-	<script src="js/pie-charts/jquery.easy-pie-chart.js"></script>
+				<!-- Sparkline charts -->
+				<script src="js/sparkline.js"></script>
 
-	<!-- Sparkline charts -->
-	<script src="js/sparkline.js"></script>
+				<!-- Datatables JS -->
+				<script src="js/jquery.dataTables.js"></script>
 
-	<!-- Datatables JS -->
-	<script src="js/jquery.dataTables.js"></script>
+				<!-- Calendar Js -->
+				<script src='js/fullcalendar/jquery-ui-1.10.2.custom.min.js'></script>
+				<script src='js/fullcalendar/fullcalendar.min.js'></script>
 
-	<!-- Calendar Js -->
-	<script src='js/fullcalendar/jquery-ui-1.10.2.custom.min.js'></script>
-	<script src='js/fullcalendar/fullcalendar.min.js'></script>
+				<!-- Tiny scrollbar js -->
+				<script src="js/tiny-scrollbar.js"></script>
 
-	<!-- Tiny scrollbar js -->
-	<script src="js/tiny-scrollbar.js"></script>
+				<!-- Custom Js -->
+				<script src="js/custom-index.js"></script>
+				<script src="js/custom-calendar.js"></script>
 
-	<!-- Custom Js -->
-	<script src="js/custom-index.js"></script>
-	<script src="js/custom-calendar.js"></script>
-
-	<script src="js/theming.js"></script>
-	<script src="js/custom.js"></script>
+				<script src="js/theming.js"></script>
+				<script src="js/custom.js"></script>
 </body>
 </html>
