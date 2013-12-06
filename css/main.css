@@ -258,7 +258,11 @@ a {
 
 .span3 {
   width: 220px; }
-
+  
+  /* Parameswaran */
+.span3.5 {
+  width: 220px; }
+    
 .span2 {
   width: 140px; }
 
@@ -321,8 +325,8 @@ a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
-    margin-left: 2.127659574468085%;
-    *margin-left: 2.074468085106383%; }
+    margin-left: 4px;
+    *margin-left: 4px;  }
     .row-fluid [class*="span"]:first-child {
       margin-left: 0; }
   .row-fluid .controls-row [class*="span"] + [class*="span"] {
@@ -1255,7 +1259,7 @@ input.span9, textarea.span9, .uneditable-input.span9 {
   width: 686px; }
 
 input.span8, textarea.span8, .uneditable-input.span8 {
-  width: 606px; }
+  width: 606px; }e:///home/ideas2it101/Desktop/EasyTech/userprofile.html
 
 input.span7, textarea.span7, .uneditable-input.span7 {
   width: 526px; }
@@ -5061,7 +5065,7 @@ header {
       border: 1px solid #e0e0e0;
       clear: both;
       margin-top: 0px;
-      margin-bottom: 30px;
+      margin-bottom: 5px;/*modified by parameswaran*/
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       border-radius: 2px; }
@@ -5164,7 +5168,7 @@ ul.stats-overview {
     padding: 2px;
     border: 1px solid #e6e6e6; }
   .tab-widget .signups li .info, .tab-widget .clients li .info, .tab-widget .chats li .info {
-    margin-left: 58px;
+    /* margin-left: 58px; */
     color: #428bca; }
     .tab-widget .signups li .info h6, .tab-widget .clients li .info h6, .tab-widget .chats li .info h6 {
       margin: 0;
@@ -7149,8 +7153,8 @@ ul.stats-overview {
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       float: left;
-      margin-left: 2.7624309392265194%;
-      *margin-left: 2.709239449864817%; }
+       margin-left: 4px;
+      *margin-left: 4px;  }
       .row-fluid [class*="span"]:first-child {
         margin-left: 0; }
     .row-fluid .controls-row [class*="span"] + [class*="span"] {
@@ -7416,8 +7420,8 @@ ul.stats-overview {
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       float: left;
-      margin-left: 2.564102564102564%;
-      *margin-left: 2.5109110747408616%; }
+      margin-left: 4px;
+      *margin-left: 4px;}
       .row-fluid [class*="span"]:first-child {
         margin-left: 0; }
     .row-fluid .controls-row [class*="span"] + [class*="span"] {
