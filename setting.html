@@ -20,7 +20,7 @@
 <head>
 <meta charset="utf-8">
 <title>StartUp Admin</title>
-<meta name="author" content="madan" >
+<meta name="author" content="madan">
 <meta content="width=device-width, initial-scale=1.0, user-scalable=no"
 	name="viewport">
 <meta name="description" content="StartUp Admin UI">
@@ -53,23 +53,23 @@
 						class="caret icon-white"></span>
 				</a>
 					<ul class="dropdown-menu pull-right">
-						<li><a href="#" id="inbox">Inbox</a></li>
-						<li><a href="#" id="composemail">Compose</a></li>
-						<li><a href="#" id="draft">Draft</a></li>
-						<li><a href="#" id="sentMail">Sent Mail</a></li>
-						<li><a href="#" id="sentLeter">Sent Leter</a></li>
+						<li><a href="inbox.html" id="inbox">Inbox</a></li>
+						<li><a href="composemail.html" id="composemail">Compose</a></li>
+						<li><a href="draft.html" id="draft">Draft</a></li>
+						<li><a href="sentMessage.html" id="sentMessage">Sent Message</a></li>
+						<li><a href="sentLeter.html" id="sentLeter">Sent Leter</a></li>
 					</ul>
 				<li class="dropdown"><a data-toggle="dropdown"
 					class="dropdown-toggle" href=""> Mail <span
 						class="caret icon-white"></span>
 				</a>
 					<ul class="dropdown-menu pull-right">
-						<li><a href="#" id="inbox">Inbox</a></li>
-						<li><a href="#" id="composemail">Compose</a></li>
-						<li><a href="#" id="draft">Draft</a></li>
-						<li><a href="#" id="sentMail">Sent Mail</a></li>
-						<li><a href="#" id="contacts">Contacts</a></li>
-						<li><a href="#" id="setting">Setting</a></li>
+						<li><a href="inbox.html" id="inbox">Inbox</a></li>
+						<li><a href="composemail.html" id="composemail">Compose</a></li>
+						<li><a href="draft.html" id="draft">Draft</a></li>
+						<li><a href="sentMail.html" id="sentMail">Sent Mail</a></li>
+						<li><a href="contacts.html" id="contacts">Contacts</a></li>
+						<li><a href="setting.html" id="setting">Setting</a></li>
 					</ul></li>
 				<li class="dropdown"><a data-toggle="dropdown"
 					class="dropdown-toggle" href=""> Document <span
@@ -89,8 +89,7 @@
 						<li><a href="#" id="manageSchedule">Manage Schedule</a></li>
 					</ul></li>
 				<li><a href="#documentation" data-toggle="modal"
-					data-original-title=""> Documentation </a>
-				</li>
+					data-original-title=""> Documentation </a></li>
 				<li class="dropdown"><a data-toggle="dropdown"
 					class="dropdown-toggle" href=""> Theming <span
 						class="caret icon-white"></span>
@@ -436,107 +435,114 @@
 			<div class="main-container">
 				<div class="page-header">
 					<div class="pull-left">
-						<h2> Mail Settings</h2>
+						<h2>Mail Settings</h2>
 					</div>
 					<div class="clearfix"></div>
 				</div>
 				<div class="row-fluid">
 					<div class="span12">
-                  <div class="widget">
-						<div class="widget-body">
-							<form class="form-horizontal no-margin">
-								<div class="control-group">
-									<label class="control-label"> FirstName <span class="required">*</span>
-									</label>
-									<div class="controls controls-row">
-										<input class="span8" type="text" name="FirstName" id="FirstName">
+						<div class="widget">
+							<div class="widget-body">
+								<form class="form-horizontal no-margin">
+									<div class="control-group">
+										<label class="control-label"> FirstName <span
+											class="required">*</span>
+										</label>
+										<div class="controls controls-row">
+											<input class="span4" type="text" name="FirstName"
+												id="FirstName">
+										</div>
 									</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label" for="email1"> LastName
-									<span class="required">*</span> </label>
-									<div class="controls">
-										<input type="text" name="LastName" id="LastName" class="span8" />
+									<div class="control-group">
+										<label class="control-label" for="email1"> LastName <span
+											class="required">*</span>
+										</label>
+										<div class="controls">
+											<input type="text" name="LastName" id="LastName"
+												class="span4" />
+										</div>
 									</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label" for="email"> Email </label>
-									<div class="controls">
-										<input type="text" name="email" id="email"
-											class="span8" />
+									<div class="control-group">
+										<label class="control-label" for="email"> Email </label>
+										<div class="controls">
+											<input type="text" name="email" id="email" class="span4" />
+										</div>
 									</div>
+									<div class="control-group">
+										<label class="control-label" for="password"> Password
+											<span class="required">*</span>
+										</label>
+										<div class="controls">
+											<input type="password" name="password" id="password"
+												class="span4" />
+										</div>
 									</div>
-								<div class="control-group">
-									<label class="control-label" for="password"> Password <span class="required">*</span>
-									</label>
-									<div class="controls">
-										<input type="password" name="password" id="password"
-											class="span8" />
+									<fieldset class="control-group">
+										<label class="control-label style3 style18"
+											for="user.signature">User Signature</label>
+										<div class="controls">
+											<textarea id="signature" class="span4" name="signature"></textarea>
+										</div>
+									</fieldset>
+									<div class="control-group">
+										<label class="control-label" for="status"> Status </label>
+										<div class="controls">
+											<label id="status" class="style3 style18"
+												style="color: green;">Connected</label>
+										</div>
 									</div>
-								</div>
-								<fieldset class="control-group">
-                          <label class="control-label style3 style18" for="user.signature">User Signature</label>
-                            <div class="controls">
-                              <textarea id="signature" class="span8" name="signature"></textarea>
-                            </div>
-                        </fieldset>
-								<div class="control-group">
-									<label class="control-label" for="status"> Status </label>
-									<div class="controls">
-                             <label id="status" class="style3 style18" style="color: green;">Connected</label>
-                           </div>
-								</div>
-								<div class="control-group">
-								  <div class="form-actions no-margin">
-									 <div class="floatLeft" style="width:70%">
-                              <button class="btn btn-primary normalButton padding0 line-height0" onclick="submitSend(this.form);" name="send" type="button">Update</button>
-                            </div>
-								<div class="clearfix">
-                      </div>
-                    </div>
-						</form>
+									<div class="control-group">
+										<div class="form-actions no-margin">
+											<div class="floatLeft" style="width: 70%">
+												<button
+													class="btn btn-primary normalButton padding0 line-height0"
+													onclick="submitSend(this.form);" name="send" type="button">Update</button>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+								</form>
+							</div>
 						</div>
 					</div>
+
 				</div>
-
+				<!-- Indox-container -->
 			</div>
-			<!-- Indox-container -->
-		</div>
-		<!-- container-fluid -->
+			<!-- container-fluid -->
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.js"></script>
-		<script src="js/moment.js"></script>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/bootstrap.js"></script>
+			<script src="js/moment.js"></script>
 
-		<!-- Flot charts -->
-		<script src="js/flot/jquery.flot.js"></script>
-		<script src="js/flot/jquery.flot.selection.js"></script>
-		<script src="js/flot/jquery.flot.pie.js"></script>
+			<!-- Flot charts -->
+			<script src="js/flot/jquery.flot.js"></script>
+			<script src="js/flot/jquery.flot.selection.js"></script>
+			<script src="js/flot/jquery.flot.pie.js"></script>
 
-		<!-- Google Visualization JS -->
-		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+			<!-- Google Visualization JS -->
+			<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
-		<!-- Easy Pie Chart JS -->
-		<script src="js/pie-charts/jquery.easy-pie-chart.js"></script>
+			<!-- Easy Pie Chart JS -->
+			<script src="js/pie-charts/jquery.easy-pie-chart.js"></script>
 
-		<!-- Sparkline charts -->
-		<script src="js/sparkline.js"></script>
+			<!-- Sparkline charts -->
+			<script src="js/sparkline.js"></script>
 
-		<!-- Datatables JS -->
-		<script src="js/jquery.dataTables.js"></script>
+			<!-- Datatables JS -->
+			<script src="js/jquery.dataTables.js"></script>
 
-		<!-- Calendar Js -->
-		<script src='js/fullcalendar/jquery-ui-1.10.2.custom.min.js'></script>
-		<script src='js/fullcalendar/fullcalendar.min.js'></script>
+			<!-- Calendar Js -->
+			<script src='js/fullcalendar/jquery-ui-1.10.2.custom.min.js'></script>
+			<script src='js/fullcalendar/fullcalendar.min.js'></script>
 
-		<!-- Tiny scrollbar js -->
-		<script src="js/tiny-scrollbar.js"></script>
+			<!-- Tiny scrollbar js -->
+			<script src="js/tiny-scrollbar.js"></script>
 
-		<!-- Custom Js -->
-		<script src="js/custom-index.js"></script>
-		<script src="js/custom-calendar.js"></script>
+			<!-- Custom Js -->
+			<script src="js/custom-index.js"></script>
+			<script src="js/custom-calendar.js"></script>
 
-		<script src="js/theming.js"></script>
-		<script src="js/custom.js"></script>
+			<script src="js/theming.js"></script>
+			<script src="js/custom.js"></script>
 </body>
 </html>
