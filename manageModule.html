@@ -56,7 +56,8 @@
 						<li><a href="inbox.html" id="inbox">Inbox</a></li>
 						<li><a href="composemail.html" id="composemail">Compose</a></li>
 						<li><a href="draft.html" id="draft">Draft</a></li>
-						<li><a href="sentMessage.html" id="sentMessage">Sent Message</a></li>
+						<li><a href="sentMessage.html" id="sentMessage">Sent
+								Message</a></li>
 						<li><a href="sentLeter.html" id="sentLeter">Sent Leter</a></li>
 					</ul>
 				<li class="dropdown"><a data-toggle="dropdown"
@@ -492,10 +493,8 @@
 					</div>
 					<div class="clearfix"></div>
 				</div>
-
 				<div class="row-fluid">
 					<div class="span12">
-
 						<div class="span3">
 							<div class="widget">
 								<div class="widget-header">
@@ -505,198 +504,131 @@
 								</div>
 								<div class="widget-body">
 									<div class="tab-widget">
-										<div id="all_tables" style="overflow: auto; height: 536px;">
+										<div id="all_tables" style="overflow: auto; height: 470px;">
 										</div>
 										<div class="clearfix"></div>
 									</div>
 								</div>
 							</div>
 						</div>
-
 						<div class="span9">
 							<div class="widget">
 								<div class="widget-header">
 									<div class="title">
 										<span class="fs1" aria-hidden="true"></span> Create Module
-
 									</div>
 								</div>
-								<div class="widget-body">
-									<div id="all_tables" style="overflow: auto; height: 536px;">
-										<table>
-											<tbody>
-												<tr>
-													<td width="271" height="40"><label
-														class="control-label style3 style18" for="name">
-															Name <span class="required">*</span>
-													</label></td>
-													<td class="uneditable-input1" width="436"><input
-														id="name" class="medium" type="text" value="" name="name">
-													</td>
-												</tr>
-												<tr>
-													<td class="pad-T8 pad-B8" width="271" height="40"><label
-														class="control-label style3 style18" for="description">Description</label>
-													</td>
-													<td class="uneditable-input1 pad-T8 pad-B8" width="436">
-														<textarea id="description" class="medium" cols="27"
-															rows="3" name="description"></textarea>
-													</td>
-												</tr>
-												<tr>
-													<td width="271" height="40"><label
-														class="control-label style3 style18" for="sortNo">Sort
-															No</label></td>
-													<td class="uneditable-input1" width="436"><input
-														id="moduleOrder" class="medium" type="text" value="0"
-														name="moduleOrder"></td>
-												</tr>
-												<tr height="15px;"></tr>
-												<tr>
-													<td>
-														<table>
-															<tbody>
-																<tr>
-																	<td width="500" height="40"><span
-																		class="style3 style18"> <label>Is
-																				Public</label>
-																	</span></td>
-																	<td class="uneditable-input1" width="436"><input
-																		id="isPublic" type="checkbox" value="true"
-																		name="isPublic"> <input type="hidden"
-																		value="on" name="_isPublic"></td>
-																</tr>
-															</tbody>
-														</table>
-													</td>
-													<td>
-														<table>
-															<tbody>
-																<tr>
-																	<td width="271" height="40"><span
-																		class="style3 style18"> <label>Is
-																				System Module</label>
-																	</span></td>
-																	<td class="uneditable-input1" width="436"><input
-																		id="isSystemModule" type="checkbox" value="true"
-																		name="isSystemModule"> <input type="hidden"
-																		value="on" name="_isSystemModule"></td>
-																</tr>
-															</tbody>
-														</table>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-										<table>
-											<tbody>
-												<tr height="25px"></tr>
-												<tr>
-													<td>
-														<table>
-															<tbody>
-																<tr>
-																	<th colspan="1">Admin Permission</th>
-																</tr>
-																<tr id="administratorDiv" style="line-height: 65px;">
-																	<td><span class="style3 style18 style21"> <label
-																			class="control-label style3 style18" for="users">Users</label>
-																	</span></td>
-																	<td class="uneditable-input1"><input
-																		id="administrators" class="medium white-background"
-																		type="hidden" name="administrators" value="">
-																		<input id="administratorsFullName"
-																		class="medium white-background" type="text"
-																		name="administratorsFullName"></td>
-																</tr>
-																<tr id="departmentDiv">
-																	<td><label class="control-label style3 style18"
-																		for="department">Department</label></td>
-																	<td class="uneditable-input1"><input
-																		id="moduleDepartments" class="medium white-background"
-																		type="text" name="departments"></td>
-																</tr>
-																<tr>
-																	<td><label class="control-label style3 style18"
-																		for="roles">Role</label></td>
-																	<td class="uneditable-input1">
-																		<div class="uneditable-input1 pad-T8">
-																			<input id="moduleRoles"
-																				class="medium white-background" type="text"
-																				name="roles">
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td><label class="control-label style3 style18"
-																		for="groups">Group</label></td>
-																	<td class="uneditable-input1">
-																		<div class="uneditable-input1 pad-T8">
-																			<input id="moduleGroups"
-																				class="medium white-background" type="text"
-																				name="groups">
-																		</div>
-																	</td>
-																</tr>
-															</tbody>
-														</table>
-													</td>
-													<td>
-														<table>
-															<tbody>
-																<tr>
-																	<th colspan="1">View Permission</th>
-																</tr>
-																<tr id="administratorViewDiv" style="line-height: 65px;">
-																	<td><span class="style3 style18 style21"> <label
-																			class="control-label style3 style18" for="viewUsers">Users</label>
-																	</span></td>
-																	<td class="uneditable-input1"><input
-																		id="viewAdministrators"
-																		class="medium white-background" type="hidden"
-																		name="viewAdministrators" value=""> <input
-																		id="viewAdministratorsFullName"
-																		class="medium white-background" type="text"
-																		name="viewAdministratorsFullName"></td>
-																</tr>
-																<tr id="departmentDiv">
-																	<td><label class="control-label style3 style18"
-																		for="viewDepartment">Department</label></td>
-																	<td class="uneditable-input1"><input
-																		id="viewDepartments" class="medium white-background"
-																		type="text" name="viewDepartments"></td>
-																</tr>
-																<tr>
-																	<td><label class="control-label style3 style18"
-																		for="viewRoles">Role</label></td>
-																	<td class="uneditable-input1">
-																		<div class="uneditable-input1 pad-T8">
-																			<input id="viewRoles" class="medium white-background"
-																				type="text" name="viewRoles">
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td><label class="control-label style3 style18"
-																		for="viewGroups">Group</label></td>
-																	<td class="uneditable-input1">
-																		<div class="uneditable-input1 pad-T8">
-																			<input id="viewGroups"
-																				class="medium white-background" type="text"
-																				name="viewGroups">
-																		</div>
-																	</td>
-																</tr>
-															</tbody>
-														</table>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-										<div id="saveButtonDiv">
-											<button
-												class="btn btn-primary normalButton padding5 line-height0"
-												type="submit" name="next" style="margin-left: 290px;">Save</button>
+								<div class="row-fluid">
+									<div class="span12">
+										<div class="widget-body">
+											<form class="form-horizontal no-margin">
+												<div class="control-group">
+													<label class="control-label"> Name <span
+														class="required">*</span>
+													</label>
+													<div class="controls controls-row">
+														<input class="span8" type="text">
+													</div>
+												</div>
+												<div class="control-group">
+													<label class="control-label"> Discription </label>
+													<div class="controls controls-row">
+														<textarea id="description" class="span8"
+															name="description"></textarea>
+													</div>
+												</div>
+												<div class="control-group">
+													<label class="control-label" for="email1"> Sort No
+													</label>
+													<div class="controls">
+														<input type="text" name="sortNo" value="0" class="span8" />
+													</div>
+												</div>
+												<div class="span6">
+													<label class="control-label" for="email1"> Is
+														Public </label>
+													<div class="controls">
+														<input id="isPublic" type="checkbox" value="true"
+															name="isPublic">
+													</div>
+												</div>
+												<div class="span6">
+													<label class="control-label" for="email1"> Is
+														System Module </label>
+													<div class="controls">
+														<input id="isPublic" type="checkbox" value="true"
+															name="Is System Module">
+													</div>
+												</div>
+												<div class="span6">
+													<div class="title">
+														<span class="fs1" aria-hidden="true"></span>
+														<h5>Admin Permission</h5>
+													</div>
+													<div class="control-group">
+														<label class="control-label"> Users </label>
+														<div class="controls controls-row">
+															<input class="span12" type="text">
+														</div>
+													</div>
+													<div class="control-group">
+														<label class="control-label"> Department </label>
+														<div class="controls controls-row">
+															<input class="span12" type="text">
+														</div>
+													</div>
+													<div class="control-group">
+														<label class="control-label"> Role </label>
+														<div class="controls controls-row">
+															<input class="span12" type="text">
+														</div>
+													</div>
+													<div class="control-group">
+														<label class="control-label"> Group </label>
+														<div class="controls controls-row">
+															<input class="span12" type="text">
+														</div>
+													</div>
+												</div>
+												<div class="span6">
+													<div class="title">
+														<span class="fs1" aria-hidden="true"></span>
+														<h5>View Permission</h5>
+													</div>
+													<div class="control-group">
+														<label class="control-label"> Users </label>
+														<div class="controls controls-row">
+															<input class="span12" type="text">
+														</div>
+													</div>
+													<div class="control-group">
+														<label class="control-label"> Department </label>
+														<div class="controls controls-row">
+															<input class="span12" type="text">
+														</div>
+													</div>
+													<div class="control-group">
+														<label class="control-label"> Role </label>
+														<div class="controls controls-row">
+															<input class="span12" type="text">
+														</div>
+													</div>
+													<div class="control-group">
+														<label class="control-label"> Group </label>
+														<div class="controls controls-row">
+															<input class="span12" type="text">
+														</div>
+													</div>
+												</div>
+
+												<div class="span12">
+													<div id="saveButtonDiv">
+														<button
+															class="btn btn-primary normalButton padding5 line-height0"
+															type="submit" name="next" style="margin-left: 380px;">Save</button>
+													</div>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -706,7 +638,8 @@
 				</div>
 			</div>
 		</div>
-		<!-- Indox-container -->
+	</div>
+	<!-- Indox-container -->
 	</div>
 	<!-- container-fluid -->
 
