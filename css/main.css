@@ -338,11 +338,16 @@ a {
     width: 91.48936170212765%;
     *width: 91.43617021276594%; }
   .row-fluid .span10 {
-    width: 82.97872340425532%;
-    *width: 82.92553191489361%; }
+    width: 84.97872340425532%;
+    *width: 84.92553191489361%; }
   .row-fluid .span9 {
-    width: 74.46808510638297%;
-    *width: 74.41489361702126%; }
+  	/**
+  	rajasekar increased 2 pixel span9 and span 10
+  	width: 74.46808510638297%;
+    *width: 74.41489361702126%;
+  	*/
+    width: 76.46808510638297%;
+    *width: 76.41489361702126%; }
   .row-fluid .span8 {
     width: 65.95744680851064%;
     *width: 65.90425531914893%; }
@@ -4680,7 +4685,7 @@ header {
       padding: 0 12px; }
     header #mini-nav .dropdown-menu {
       min-width: 160px;
-     /* margin-right: -1px;*/
+      margin-right: -1px;
       border: 1px solid #b3b3b3;
       border-top: 0; }
       header #mini-nav .dropdown-menu li {
@@ -7184,11 +7189,16 @@ ul.stats-overview {
       width: 91.43646408839778%;
       *width: 91.38327259903608%; }
     .row-fluid .span10 {
-      width: 82.87292817679558%;
-      *width: 82.81973668743387%; }
+      width: 84.87292817679558%;
+      *width: 84.81973668743387%; }
     .row-fluid .span9 {
-      width: 74.30939226519337%;
-      *width: 74.25620077583166%; }
+    	/**
+  	rajasekar increased 2 pixel span9 and span 10
+  	width: 74.46808510638297%;
+    *width: 74.41489361702126%;
+  	*/
+      width: 76.30939226519337%;
+      *width: 76.25620077583166%; }
     .row-fluid .span8 {
       width: 65.74585635359117%;
       *width: 65.69266486422946%; }
@@ -7451,11 +7461,16 @@ ul.stats-overview {
       width: 91.45299145299145%;
       *width: 91.39979996362975%; }
     .row-fluid .span10 {
-      width: 82.90598290598291%;
-      *width: 82.8527914166212%; }
+      width: 84.90598290598291%;
+      *width: 84.8527914166212%; }
     .row-fluid .span9 {
-      width: 74.35897435897436%;
-      *width: 74.30578286961266%; }
+    	/**
+	  	rajasekar increased 2 pixel span9 and span 10
+	  	width: 74.46808510638297%;
+	    *width: 74.41489361702126%;
+  		*/
+      width: 76.35897435897436%;
+      *width: 76.30578286961266%; }
     .row-fluid .span8 {
       width: 65.81196581196582%;
       *width: 65.75877432260411%; }
@@ -7728,4 +7743,14 @@ ul.stats-overview {
     
 .newdropdown-submenu ul{
 	left:162px;top:1px;position:absolute;margin-right:-1px;
+}
+/*bpm css*/
+.btn-block 
+{
+padding-left: 5;
+padding-top: 5px;
+margin-top: 4px; 
+}
+.btn {
+  border-color: #d1d2d3;
 }
