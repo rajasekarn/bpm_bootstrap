@@ -48,25 +48,23 @@
 			<ul class="hidden-phone">
 				<li class="dropdown">
 					<a data-toggle="dropdown" class="dropdown-toggle" href=""> Message <span class="caret icon-white"></span></a>
-					</a>
 					<ul class="dropdown-menu pull-right">
-						<li><a href="inbox.html" id="inbox">Inbox</a></li>
-						<li><a href="composemail.html" id="composemail">Compose</a></li>
-						<li><a href="draft.html" id="draft">Draft</a></li>
-						<li><a href="sentMessage.html" id="sentMessage">Sent Message</a></li>
-						<li><a href="sentLeter.html" id="sentLeter">Sent Leter</a></li>
+						<li><a href="#" id="mail">Inbox</a></li>
+						<li><a href="#" id="mail">Compose</a></li>
+						<li><a href="#" id="mail">Draft</a></li>
+						<li><a href="#" id="mail">Sent Mail</a></li>
+						<li><a href="#" id="mail">Sent Leter</a></li>
 					</ul>
-				<li class="dropdown"><a data-toggle="dropdown"
-					class="dropdown-toggle" href=""> Mail <span
-						class="caret icon-white"></span>
-				</a>
+				</li>
+				<li class="dropdown">
+					<a data-toggle="dropdown" class="dropdown-toggle" href=""> Mail <span class="caret icon-white"></span></a>
 					<ul class="dropdown-menu pull-right">
-						<li><a href="inbox.html" id="inbox">Inbox</a></li>
-						<li><a href="composemail.html" id="composemail">Compose</a></li>
-						<li><a href="draft.html" id="draft">Draft</a></li>
-						<li><a href="sentMail.html" id="sentMail">Sent Mail</a></li>
-						<li><a href="contacts.html" id="contacts">Contacts</a></li>
-						<li><a href="setting.html" id="setting">Setting</a></li>
+						<li><a href="#" id="mail">Inbox</a></li>
+						<li><a href="#" id="mail">Compose</a></li>
+						<li><a href="#" id="mail">Draft</a></li>
+						<li><a href="#" id="mail">Sent Mail</a></li>
+						<li><a href="#" id="mail">Contacts</a></li>
+						<li><a href="#" id="mail">Setting</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
@@ -367,78 +365,83 @@
 			</div>
 		</div>
 		<div class="dashboard-wrapper">
-			<div id="main-nav" class="hidden-phone hidden-tablet">
-				<ul>
-    				<li>
-						<a href="home.html" class="selected"> 
-							<span class="fs1">
-								<img src="img/home_icon2.png" />
-							</span> HOME
-						</a>
-						<ul>
-							<li><a href="">LAYOUT</a>
-								<ul>
-									<li><a href="managelayout.html">MANAGE LAYOUT</a></li>
+			<div id="main-nav">
+        	<ul class="hidden-phone">
+    				<li class="dropdown">
+						<a data-toggle="dropdown" class="dropdown-toggle"href="home.html" class="selected">
+						  <span class="fs1"> <img src="img/home_icon2.png" /></span> HOME </a>
+							<ul class="dropdown-menu">
+								<li  class="dropdown-submenu">
+									<a href="" tabindex="-1" id="">LAYOUT</a>
+									<ul class="subdown">
+										<li><a href="managelayout.html">MANAGE LAYOUT</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a href="">NOTICE</a>
+									<ul class="subdown">
+										<li><a href="noticelist.html">NOTICE LIST</a></li>
+										<li><a href="createnotice.html">CREATE NOTICE</a></li>
+									</ul>
+								</li>
+
+								<li class="dropdown-submenu">
+									<a href="">NEWS</a>
+									<ul class="subdown">
+										<li><a href="newslist.html">NEWS LIST</a></li>
+										<li><a href="createnews.html">CREATE NEWS</a></li>
+									</ul>
+								</li>
+
+								<li class="dropdown-submenu">
+									<a href="todolist.html">TODO LIST</a>
+									<ul class="subdown">
+										<li><a href="create.html">CREATE</a></li>
+										<li><a href="todolist.html">TODO LIST</a></li>
+									</ul>
+								</li>
+
+								<li class="dropdown-submenu">
+									<a href="mytask.html">MY TASKS</a>
+									<ul class="subdown">
+										<li><a href="mybucket.html">MY BUCKET</a></li>
+										<li><a href="myinvolvements.html">MY INVOLVEMENTS</a></li>
+										<li><a href="waitinglist.html">WAITING LIST</a></li>
+									</ul>
+								</li>
+
+								<li class="dropdown-submenu">
+									<a href="schedule">SCHEDULES</a>
+									<ul class="subdown">
+										<li><a href="calender.html">CALENDER</a></li>
+									</ul>
+								</li>
+
+								<li class="dropdown-submenu">
+									<a href="references.html">REFERENCES</a>
+									<ul class="subdown">
+										<li><a href="commonopinionss.html">COMMON OPINIONS</a></li>
+										<li><a href="agencysettings.html">AGENCY SETTINGS</a></li>
+									</ul>
+								</li>
+
+								<li class="dropdown-submenu">
+									<a href="module.html">MODULE</a>
+										<ul class="subdown">
+											<li><a href="usermodules.html">USER MODULE</a></li>
+										</ul>
+									</li>
 								</ul>
 							</li>
-							
-							<li><a href="">NOTICE</a>
-								<ul>
-									<li><a href="noticelist.html">NOTICE LIST</a></li>
-									<li><a href="createnotice.html">CREATE NOTICE</a></li>
-								</ul>
-							</li>
-							
-							<li><a href="">NEWS</a>
-								<ul>
-									<li><a href="newslist.html">NEWS LIST</a></li>
-									<li><a href="createnews.html">CREATE NEWS</a></li>
-								</ul>
-							</li>
-							
-							<li><a href="todolist.html">TODO LIST</a>
-								<ul>
-									<li><a href="create.html">CREATE</a></li>
-									<li><a href="todolist.html">TODO LIST</a></li>
-								</ul>
-							</li>
-							
-							<li><a href="mytask.html">MY TASKS</a>
-								<ul>
-									<li><a href="mybucket.html">MY BUCKET</a></li>
-									<li><a href="myinvolvements.html">MY INVOLVEMENTS</a></li>
-									<li><a href="waitinglist.html">WAITING LIST</a></li>
-								</ul>
-							</li>
-							
-							<li><a href="schedule">SCHEDULES</a>
-								<ul>
-									<li><a href="calender.html">CALENDER</a></li>
-								</ul>
-							</li>
-							
-							<li><a href="references.html">REFERENCES</a>
-								<ul>
-									<li><a href="commonopinionss.html">COMMON OPINIONS</a></li>									
-									<li><a href="agencysettings.html">AGENCY SETTINGS</a></li>
-								</ul>
-							</li>
-							
-							<li><a href="module.html">MODULE</a>
-								<ul>
-									<li><a href="usermodules.html">USER MODULE</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
 					
-					<li><a href="process.html">
-							 <span class="fs1" aria-hidden="true"><img src="img/process_icon.png" />
-							 </span>PROCESS
-						</a>
-						<ul>
-							<li><a href="task.html">TASK</a>
-								<ul>
+						<li class="dropdown">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="process.html">
+							 	<span class="fs1" aria-hidden="true"><img src="img/process_icon.png" />
+							 	</span>PROCESS
+							</a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-submenu"><a href="task.html">TASK</a>
+								<ul class="subdown">
 									<li><a href="todolist.html">TODO LIST</a></li>
 									<li><a href="workflowinstance.html">WORKFLOW INSTANCE</a></li>							
 									<li><a href="donelist.html">DONE LIST</a></li>
@@ -450,23 +453,23 @@
 								</ul>
 							</li>
 							
-							<li><a href="manage.html">MANAGE</a>
-								<ul>
+							<li class="dropdown-submenu"><a href="manage.html">MANAGE</a>
+								<ul class="subdown">
 									<li><a href="process.html">PROCESS</a></li>
 									<li><a href="monitorprocess.html">MONITOR PROCESS</a></li>
 									<li><a href="customfunction.html">CUSTOM FUNCTION</a></li>
 								</ul>
 							</li>
 							
-							<li><a href="module.html">MODULE</a>
-								<ul>
+							<li class="dropdown-submenu"><a href="module.html">MODULE</a>
+								<ul class="subdown">
 									<li><a href="managemodules.html">MANAGE MODULES</a></li>
 									<li><a href="datasheet.html">DATA SHEET</a></li>
 								</ul>
 							</li>
 							
-							<li><a href="documents.html">DOCUMENTS</a>
-								<ul>
+							<li class="dropdown-submenu"><a href="documents.html">DOCUMENTS</a>
+								<ul class="subdown">
 									<li><a href="documenttobedone.html">DOCUMENT TO BE DONE</a></li>										
 									<li><a href="donedocumentlist.html">DONE DOCUMENT LIST</a></li>						
 									<li><a href="documenttoberead.html">DOCUMENT TO BE READ</a></li>										
@@ -476,16 +479,16 @@
 								</ul>
 							</li>
 							
-							<li><a href="process.html">PROCESS</a>
-								<ul>
+							<li class="dropdown-submenu"><a href="process.html">PROCESS</a>
+								<ul class="subdown">
 									<li><a href="myinstances.html">MY INSTANCES</a></li>
 									<li><a href="journal.html">JOURNAL</a></li>
 									<li><a href="mymonitorprocesses.html">MY MONITOR PROCESSES</a></li>											
 								</ul>
 							</li>
 							
-							<li><a href="statistics.html">STATISTICS</a>
-								<ul>
+							<li class="dropdown-submenu"><a href="statistics.html">STATISTICS</a>
+								<ul class="subdown">
 									<li><a href="businessstatistics.html">BUSINESS STATISTICS</a></li>															
 									<li><a href="departmentstatistics.html">DEPARTMENT STATISTICS</a></li>										
 									<li><a href="personalstatistics.html">PERSONAL STATISTICS</a></li>																		
@@ -498,9 +501,9 @@
 					<li><a href="admin.html"> 
 							<span class="fs1"><img src="img/admin_icon.png" /></span> ADMIN
 						</a>
-						<ul>
-							<li><a href="administrator.html">ADMINISTRATION</a>
-								<ul>
+						<ul class="dropdown-menu">
+							<li class="dropdown-submenu"><a href="administrator.html">ADMINISTRATION</a>
+								<ul  class="subdown">
 									<li><a href="manageusers.html">MANAGE USERS</a></li>
 									<li><a href="manageroless.html">MANAGE ROLES</a></li>
 									<li><a href="managegroups.html">MANAGE GROUPS</a></li>
@@ -514,28 +517,28 @@
 								</ul>
 							</li>
 							
-							<li><a href="ui-elements.html">SMS</a>
-								<ul>
+							<li class="dropdown-submenu"><a href="ui-elements.html">SMS</a>
+								<ul  class="subdown">
 									<li><a href="smslist.html">SMS LIST</a></li>
 									<li><a href="composesms.html">COMPOSE SMS</a></li>
 								</ul>
 							</li>
 							
-							<li><a href="configuration.html">CONFIGURATION</a>
-								<ul>
+							<li class="dropdown-submenu"><a href="configuration.html">CONFIGURATION</a>
+								<ul  class="subdown">
 									<li><a href="uploadlogo.html">UPLOAD LOGO</a></li>
 									<li><a href="managesysconfig.html">MANAGE SYSCONFIG</a></li>
 									<li><a href="mailconfiguration.html">MAIL CONFIGURATION</a></li>									
 								</ul>
 							</li>
-							<li><a href="timeline.html">TIMING TASK</a>
-								<ul>
+							<li class="dropdown-submenu"><a href="timeline.html">TIMING TASK</a>
+								<ul  class="subdown">
 									<li><a href="managetimingtask.html">MANAGE TIMING TASK</a>
 									</li>
 								</ul>
 							</li>
-							<li><a href="applicationportal.html">APPLICATION PORTAL</a>
-								<ul>
+							<li class="dropdown-submenu"><a href="applicationportal.html">APPLICATION PORTAL</a>
+								<ul  class="subdown">
 									<li><a href="managelayout.html">MANAGE LAYOUT</a></li>
 									<li><a href="managewidget.html">MANAGE WIDGET</a></li>
 									<li><a href="managequick.html">MANAGE QUICK</a></li>
@@ -550,8 +553,8 @@
 						</a>
 					</li>
 			</ul>
-				<div class="clearfix"></div>
-			</div>
+          <div class="clearfix"></div>
+        </div>
 
 			<div class="main-container">
 				<div class="navbar hidden-desktop">

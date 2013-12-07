@@ -4680,7 +4680,7 @@ header {
       padding: 0 12px; }
     header #mini-nav .dropdown-menu {
       min-width: 160px;
-      margin-right: -1px;
+     /* margin-right: -1px;*/
       border: 1px solid #b3b3b3;
       border-top: 0; }
       header #mini-nav .dropdown-menu li {
@@ -4720,10 +4720,11 @@ header {
       position: absolute;
       top: 38px;
       left: 0;
-      width: 160px;
+      width: 200px;
       display: none;
       opacity: 0;
       visibility: hidden;
+      margin-right: -1px;
       z-index: 100;
       border-top: 5px solid #428bca;
       -webkit-transition: all 0.2s ease;
@@ -4751,6 +4752,19 @@ header {
         #main-nav ul li ul li a {
           height: 14px;
           line-height: 14px; }
+         #main-nav ul li ul li .subdown{
+          	display:none;
+         	left:201px;
+         	top:1px;
+         	visibility:hidden;
+         	position:absolute;
+         	margin-right:-1px;
+         }
+         #main-nav ul li ul li:hover ul{
+         	display: block;
+        	opacity: 1;
+        	visibility: visible;
+         }
     #main-nav ul li a {
       height: 18px;
       line-height: 18px;
@@ -7710,3 +7724,8 @@ ul.stats-overview {
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important; } }
+
+    
+.newdropdown-submenu ul{
+	left:162px;top:1px;position:absolute;margin-right:-1px;
+}
