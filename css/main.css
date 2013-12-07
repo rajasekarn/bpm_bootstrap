@@ -5586,6 +5586,10 @@ ul.stats-overview {
     font-smooth: always;
     line-height: 16px;
     width: 100%; }
+    /* parameswaran*/
+  .grey-text  {
+    color: grey;
+    font-size: 11px; }
   .metro-nav .metro-nav-block.double {
     width: 27%; }
   .metro-nav .metro-nav-block:hover {
