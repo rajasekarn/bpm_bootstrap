@@ -87,9 +87,7 @@
 						<li><a href="#" id="manageSchedule">Manage Schedule</a></li>
 					</ul>
 				</li>
-				<li>
-					<a href="faq.html" data-toggle="modal" data-original-title="">Help </a>
-				</li>
+				
 				<li>
 					<a href="#documentation" data-toggle="modal" data-original-title=""> Documentation </a>
 					<div id="documentation" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
@@ -122,7 +120,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="faq.html"><span class="fs1" aria-hidden="true" data-icon="&#xe03b;"></span></a>
+					<a href="helpdesk.html"><span class="fs1" aria-hidden="true" data-icon="&#xe03b;"></span></a>
 				</li>
 				<li class="dropdown">
 					<a data-toggle="dropdown" class="dropdown-toggle" href=""> <span class="fs1" aria-hidden="true" data-icon="&#xe090;"></span> </a>
@@ -528,102 +526,137 @@
 							<div class="widget">
 								<div class="widget-header">
 									<div class="title">
-										<span class="fs1" aria-hidden="true"></span> Create
-											
+									<span class="fs1" aria-hidden="true"></span> Create										
 
 									</div>
 								</div>
-								<div class="widget-body">
-								
-                  <div id="wizard">
-                    <ol>
-                      <li>General</li>
-                      <li>Role Permission</li>                      
-                    </ol>
-									<div>
-										<form class="form-horizontal no-margin">
+								<div class="widget-body">								
+                 					<div id="wizard">
+                    					<ol>
+                      						<li>General</li>
+                      						<li>Role Permission</li>                      
+                    					</ol>
+										<div>
+											<form class="form-horizontal no-margin">
+												<div class="control-group">
+													<label class="control-label"> Department Name * </label>
+														<div class="controls controls-row">
+															<input class="span8" type="text">
+														</div>	
+												</div>
+												<fieldset class="control-group">
+													<label class="control-label style3 style18" for="description">Description</label>
+														<div class="controls">
+															<textarea id="description" class="span8" name="description"
+															style="height: 200px">
+															</textarea>
+															<div>
+											  					<p class="body no-margin" style="font-size: 13px">
+											  						Supporting Format (txt, html, csv, doc, rtf, docx,
+												 					xls, ppt, pptx, odp, ods, odt, jpg, png, gif, bmp)
+												 				</p>
+															</div>	
+														</div>
+											</fieldset>
 											<div class="control-group">
-												<label class="control-label"> Department Name * </label>
-												<div class="controls controls-row">
-													<input class="span8" type="text">
+												<label class="control-label"> Upload Files </label>
+												<div class="controls">
+													<table id="attachFiles">
+														<tbody>
+															<tr id="clonablerow">
+																<td class="uneditable-input1"><input id="files"
+																	type="file" name="files">
+																</td>
+																<td class="uneditable-input1">
+																	<p>
+																		<a onclick="cloneDocumentMappingRow('attachFiles')"
+																		href="javascript:;">Add</a> &nbsp;
+																	</p>
+																</td>
+																<td class="uneditable-input1">
+																	<p>
+																		<a onclick="deleteRow(this)" href="javascript:;">
+																		Remove</a>
+																	</p>
+																</td>
+															</tr>
+														</tbody>
+													</table>
 												</div>
 											</div>
-											<fieldset class="control-group">
-										<label class="control-label style3 style18" for="description">Description</label>
-										<div class="controls">
-											<textarea id="description" class="span8" name="description"
-												style="height: 200px"></textarea>
-											<div>
-											  <p class="body no-margin" style="font-size: 13px">
-											  Supporting Format (txt, html, csv, doc, rtf, docx,
-												 xls, ppt, pptx, odp, ods, odt, jpg, png, gif, bmp)</p>
+											<div class="control-group">
+												<div class="form-actions no-margin">
+													<div class="floatLeft" style="width: 70%">
+														<button
+															class="btn btn-primary normalButton padding0 line-height0"
+															onclick="submitSend(this.form);" name="save" type="button">Save
+													</button>
+													<button
+														class="btn btn-primary normalButton padding0 line-height0"
+														onclick="submitSave(this.form);" name="cancel" type="button">Cancel
+													</button>
+												</div>
+												<div class="clearfix"></div>
 											</div>
-
 										</div>
-									</fieldset>
-										<div class="control-group">
-										<label class="control-label"> Upload Files </label>
-										<div class="controls">
-											<table id="attachFiles">
-												<tbody>
-													<tr id="clonablerow">
-														<td class="uneditable-input1"><input id="files"
-															type="file" name="files"></td>
-
-														<td class="uneditable-input1">
-															<p>
-																<a onclick="cloneDocumentMappingRow('attachFiles')"
-																	href="javascript:;">Add</a> &nbsp;
-															</p>
-														</td>
-
-														<td class="uneditable-input1">
-															<p>
-																<a onclick="deleteRow(this)" href="javascript:;">
-																	Remove</a>
-															</p>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-									<div class="control-group">
-										<div class="form-actions no-margin">
-											<div class="floatLeft" style="width: 70%">
-												<button
-													class="btn btn-primary normalButton padding0 line-height0"
-													onclick="submitSend(this.form);" name="save" type="button">Save
-												</button>
-												<button
-													class="btn btn-primary normalButton padding0 line-height0"
-													onclick="submitSave(this.form);" name="cancel" type="button">Cancel
-												</button>
-											</div>
-											<div class="clearfix"></div>
-										</div>
-										</div>
-
-										</form>
-									</div>
-									<div>
-										<form class="form-horizontal no-margin">
-											
-										</form>
-									</div>
-
+									</form>
 								</div>
+								<div>
+									<div class="row-fluid">
+								<div class="widget-body">									
+								   <div class="tab-widget" class="">
+										<a class="btn btn-small btn-success pull-right " href="#">
+										Delete										
+								  	 </a>
+								  	 
+								   </div>
+								   <div class="tab-widget">
+										<a class="btn btn-small btn-success pull-right" href="#createnew">
+										Create New										
+								  	 </a>
+														<div id="documentation" class="modal hide fade"
+															aria-hidden="true" aria-labelledby="myModalLabel1"
+															role="dialog" tabindex="-1" style="display: none;">
+															<div class="modal-header">
+																<button class="close" aria-hidden="true"
+																	data-dismiss="modal" type="button">×</button>
+																<h4 id="myModalLabel1">Full html documentation is
+																	available on purchase.</h4>
+															</div>
+															<div class="modal-body">
+																<img src="img/documentation.png">
+															</div>
+														</div>
+													</div>
+								   <br>
+								   <div></div><br>
+										<table class="table table-condensed table-bordered no-margin">
+						<thead>
+							<tr>
+								<th style="width: 1%" class="hidden-phone"><input
+									type="checkbox" value=""></th>
+								<th style="width: 10%">Name</th>
+								<th style="width: 25%" class="hidden-phone">Edit</th>
+								<th style="width: 35%" class="hidden-phone">Delete</th>
+								<th style="width: 10%" class="hidden-phone">Print</th>
+								<th style="width: 10%" class="hidden-phone">Download</th>
+							</tr>
+						</thead>
+						<tbody>
 							
-             			   </div> 
+						</tbody>
+					</table>
+							</div>
 						</div>
-
-
-
-							
+									
+								</div>
+							</div>
+          			   </div>  
+					</div>							
+				</div>	
 			</div>
+			<!-- dashboard-container -->
 		</div>
-		<!-- dashboard-container -->
-	</div>
 	<!-- container-fluid -->
 
 	<script src="js/jquery.min.js"></script>
