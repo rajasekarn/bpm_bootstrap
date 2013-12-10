@@ -325,7 +325,8 @@ a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
-    margin-left: 4px;
+	/*rajasekar*/    
+	margin-left: 4px;
     *margin-left: 4px;  }
     .row-fluid [class*="span"]:first-child {
       margin-left: 0; }
@@ -338,7 +339,8 @@ a {
     width: 91.48936170212765%;
     *width: 91.43617021276594%; }
   .row-fluid .span10 {
-    width: 84.97872340425532%;
+	/*rajasekar*/    
+	width: 84.97872340425532%;
     *width: 84.92553191489361%; }
   .row-fluid .span9 {
   	/**
@@ -1264,7 +1266,7 @@ input.span9, textarea.span9, .uneditable-input.span9 {
   width: 686px; }
 
 input.span8, textarea.span8, .uneditable-input.span8 {
-  width: 606px; }e:///home/ideas2it101/Desktop/EasyTech/userprofile.html
+  width: 606px; }
 
 input.span7, textarea.span7, .uneditable-input.span7 {
   width: 526px; }
@@ -4725,11 +4727,11 @@ header {
       position: absolute;
       top: 38px;
       left: 0;
+		/*paramesh*/
       width: 200px;
       display: none;
       opacity: 0;
       visibility: hidden;
-      margin-right: -1px;
       z-index: 100;
       border-top: 5px solid #428bca;
       -webkit-transition: all 0.2s ease;
@@ -4757,9 +4759,10 @@ header {
         #main-nav ul li ul li a {
           height: 14px;
           line-height: 14px; }
-         #main-nav ul li ul li .subdown{
+		/*rajasekar submenu start*/         
+		#main-nav ul li ul li .subdown{
           	display:none;
-         	left:201px;
+         	left:200px;
          	top:1px;
          	visibility:hidden;
          	position:absolute;
@@ -4770,6 +4773,7 @@ header {
         	opacity: 1;
         	visibility: visible;
          }
+		/*rajasekar submenu end*/ 
     #main-nav ul li a {
       height: 18px;
       line-height: 18px;
@@ -5187,7 +5191,8 @@ ul.stats-overview {
     padding: 2px;
     border: 1px solid #e6e6e6; }
   .tab-widget .signups li .info, .tab-widget .clients li .info, .tab-widget .chats li .info {
-    /* margin-left: 58px; */
+    /* rajasekar
+	 margin-left: 58px; */
     color: #428bca; }
     .tab-widget .signups li .info h6, .tab-widget .clients li .info h6, .tab-widget .chats li .info h6 {
       margin: 0;
@@ -5605,10 +5610,6 @@ ul.stats-overview {
     font-smooth: always;
     line-height: 16px;
     width: 100%; }
-    /* parameswaran*/
-  .grey-text  {
-    color: grey;
-    font-size: 11px; }
   .metro-nav .metro-nav-block.double {
     width: 27%; }
   .metro-nav .metro-nav-block:hover {
@@ -7176,7 +7177,8 @@ ul.stats-overview {
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       float: left;
-       margin-left: 4px;
+	  /*rajasekar*/     
+	  margin-left: 4px;
       *margin-left: 4px;  }
       .row-fluid [class*="span"]:first-child {
         margin-left: 0; }
@@ -7189,7 +7191,8 @@ ul.stats-overview {
       width: 91.43646408839778%;
       *width: 91.38327259903608%; }
     .row-fluid .span10 {
-      width: 84.87292817679558%;
+      /*rajasekar*/
+	  width: 84.87292817679558%;
       *width: 84.81973668743387%; }
     .row-fluid .span9 {
     	/**
@@ -7448,6 +7451,7 @@ ul.stats-overview {
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       float: left;
+		/*rajasekar*/
       margin-left: 4px;
       *margin-left: 4px;}
       .row-fluid [class*="span"]:first-child {
@@ -7461,6 +7465,7 @@ ul.stats-overview {
       width: 91.45299145299145%;
       *width: 91.39979996362975%; }
     .row-fluid .span10 {
+		/*rajasekar*/
       width: 84.90598290598291%;
       *width: 84.8527914166212%; }
     .row-fluid .span9 {
@@ -7740,13 +7745,16 @@ ul.stats-overview {
     height: auto !important;
     overflow: visible !important; } }
 
-    
-.newdropdown-submenu ul{
+/*bpm css*/
+.newdropdown-submenu ul {
 	left:162px;top:1px;position:absolute;margin-right:-1px;
 }
-/*bpm css*/
-.btn-block 
-{
+/* parameswaran*/
+.grey-text  {
+    color: grey;
+    font-size: 11px; 
+}
+.btn-block {
 padding-left: 5;
 padding-top: 5px;
 margin-top: 4px; 
