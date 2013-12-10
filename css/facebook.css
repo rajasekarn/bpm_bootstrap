@@ -258,7 +258,11 @@ a {
 
 .span3 {
   width: 220px; }
-
+  
+  /* Parameswaran */
+.span3.5 {
+  width: 220px; }
+    
 .span2 {
   width: 140px; }
 
@@ -321,8 +325,9 @@ a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
-    margin-left: 2.127659574468085%;
-    *margin-left: 2.074468085106383%; }
+	/*rajasekar*/    
+	margin-left: 4px;
+    *margin-left: 4px;  }
     .row-fluid [class*="span"]:first-child {
       margin-left: 0; }
   .row-fluid .controls-row [class*="span"] + [class*="span"] {
@@ -334,11 +339,17 @@ a {
     width: 91.48936170212765%;
     *width: 91.43617021276594%; }
   .row-fluid .span10 {
-    width: 82.97872340425532%;
-    *width: 82.92553191489361%; }
+	/*rajasekar*/    
+	width: 84.97872340425532%;
+    *width: 84.92553191489361%; }
   .row-fluid .span9 {
-    width: 74.46808510638297%;
-    *width: 74.41489361702126%; }
+  	/**
+  	rajasekar increased 2 pixel span9 and span 10
+  	width: 74.46808510638297%;
+    *width: 74.41489361702126%;
+  	*/
+    width: 76.46808510638297%;
+    *width: 76.41489361702126%; }
   .row-fluid .span8 {
     width: 65.95744680851064%;
     *width: 65.90425531914893%; }
@@ -4716,7 +4727,8 @@ header {
       position: absolute;
       top: 38px;
       left: 0;
-      width: 160px;
+		/*paramesh*/
+      width: 200px;
       display: none;
       opacity: 0;
       visibility: hidden;
@@ -4747,6 +4759,21 @@ header {
         #main-nav ul li ul li a {
           height: 14px;
           line-height: 14px; }
+		/*rajasekar submenu start*/         
+		#main-nav ul li ul li .subdown{
+          	display:none;
+         	left:200px;
+         	top:1px;
+         	visibility:hidden;
+         	position:absolute;
+         	margin-right:-1px;
+         }
+         #main-nav ul li ul li:hover ul{
+         	display: block;
+        	opacity: 1;
+        	visibility: visible;
+         }
+		/*rajasekar submenu end*/ 
     #main-nav ul li a {
       height: 18px;
       line-height: 18px;
@@ -5061,7 +5088,7 @@ header {
       border: 1px solid #e0e0e0;
       clear: both;
       margin-top: 0px;
-      margin-bottom: 30px;
+      margin-bottom: 5px;/*modified by parameswaran*/
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       border-radius: 2px; }
@@ -5164,8 +5191,9 @@ ul.stats-overview {
     padding: 2px;
     border: 1px solid #e6e6e6; }
   .tab-widget .signups li .info, .tab-widget .clients li .info, .tab-widget .chats li .info {
-    margin-left: 58px;
-    color: #3b5998; }
+    /* rajasekar
+	 margin-left: 58px; */
+    color: #428bca; }
     .tab-widget .signups li .info h6, .tab-widget .clients li .info h6, .tab-widget .chats li .info h6 {
       margin: 0;
       padding: 0;
@@ -7149,8 +7177,9 @@ ul.stats-overview {
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       float: left;
-      margin-left: 2.7624309392265194%;
-      *margin-left: 2.709239449864817%; }
+	  /*rajasekar*/     
+	  margin-left: 4px;
+      *margin-left: 4px;  }
       .row-fluid [class*="span"]:first-child {
         margin-left: 0; }
     .row-fluid .controls-row [class*="span"] + [class*="span"] {
@@ -7162,11 +7191,17 @@ ul.stats-overview {
       width: 91.43646408839778%;
       *width: 91.38327259903608%; }
     .row-fluid .span10 {
-      width: 82.87292817679558%;
-      *width: 82.81973668743387%; }
+      /*rajasekar*/
+	  width: 84.87292817679558%;
+      *width: 84.81973668743387%; }
     .row-fluid .span9 {
-      width: 74.30939226519337%;
-      *width: 74.25620077583166%; }
+    	/**
+  	rajasekar increased 2 pixel span9 and span 10
+  	width: 74.46808510638297%;
+    *width: 74.41489361702126%;
+  	*/
+      width: 76.30939226519337%;
+      *width: 76.25620077583166%; }
     .row-fluid .span8 {
       width: 65.74585635359117%;
       *width: 65.69266486422946%; }
@@ -7416,8 +7451,9 @@ ul.stats-overview {
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       float: left;
-      margin-left: 2.564102564102564%;
-      *margin-left: 2.5109110747408616%; }
+		/*rajasekar*/
+      margin-left: 4px;
+      *margin-left: 4px;}
       .row-fluid [class*="span"]:first-child {
         margin-left: 0; }
     .row-fluid .controls-row [class*="span"] + [class*="span"] {
@@ -7429,11 +7465,17 @@ ul.stats-overview {
       width: 91.45299145299145%;
       *width: 91.39979996362975%; }
     .row-fluid .span10 {
-      width: 82.90598290598291%;
-      *width: 82.8527914166212%; }
+		/*rajasekar*/
+      width: 84.90598290598291%;
+      *width: 84.8527914166212%; }
     .row-fluid .span9 {
-      width: 74.35897435897436%;
-      *width: 74.30578286961266%; }
+    	/**
+	  	rajasekar increased 2 pixel span9 and span 10
+	  	width: 74.46808510638297%;
+	    *width: 74.41489361702126%;
+  		*/
+      width: 76.35897435897436%;
+      *width: 76.30578286961266%; }
     .row-fluid .span8 {
       width: 65.81196581196582%;
       *width: 65.75877432260411%; }
@@ -7702,3 +7744,21 @@ ul.stats-overview {
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important; } }
+
+/*bpm css*/
+.newdropdown-submenu ul {
+	left:162px;top:1px;position:absolute;margin-right:-1px;
+}
+/* parameswaran*/
+.grey-text  {
+    color: grey;
+    font-size: 11px; 
+}
+.btn-block {
+padding-left: 5;
+padding-top: 5px;
+margin-top: 4px; 
+}
+.btn {
+  border-color: #d1d2d3;
+}
