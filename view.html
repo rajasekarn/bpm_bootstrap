@@ -55,7 +55,7 @@
 						<li><a href="draft.html" id="draft">Draft</a></li>
 						<li><a href="sentmessage.html" id="sentMessage">Sent
 								Message</a></li>
-						<li><a href="sentLeter.html" id="sentLeter">Sent Later</a></li>
+						<li><a href="sentLeter.html" id="sentLeter">Sent Leter</a></li>
 					</ul></li>
 				<li class="dropdown"><a data-toggle="dropdown"
 					class="dropdown-toggle" href=""> Mail <span
@@ -89,8 +89,7 @@
 						<li><a href="#" id="manageSchedule">Manage Schedule</a></li>
 					</ul></li>
 				<li><a href="#" data-toggle="modal" data-original-title="">
-						Documentation </a>
-				</li>
+						Documentation </a></li>
 				<li class="dropdown"><a data-toggle="dropdown"
 					class="dropdown-toggle" href=""> Theming <span
 						class="caret icon-white"></span></a>
@@ -511,36 +510,62 @@
 							<div class="widget">
 								<div class="widget-header">
 									<div class="title">
-										<span class="fs1" aria-hidden="true"></span> Document List 
-									</div>									
+										<span class="fs1" aria-hidden="true"></span> Document  
+									</div>		
+									
+									
+									<span style="float: right">
+									<a href=""  style="float: right; width : 50px;"> Back </a>	
+									<a href=""  style="float: right; width : 50.1px"> Print </a>
+									<a href=""  onclick="return confirm('Are you sure to delete?')" style="float: right; width : 50.15px"> Delete </a>
+									<a href="createnew.html"  style="float: right; width : 50.3px"> Edit </a>		
+									</span>	
+							
 								</div>
+								
 								<div class="row-fluid">
 								<div class="widget-body">
-									<div class="tab-widget">
-										<a class="btn btn-small btn-success pull-right" href="createnew.html">
-										Create New										
-								  	 </a>
-								   </div><br>
-								   <div></div><br>
-										<table class="table table-condensed table-bordered no-margin">
-											<thead>
-												<tr>
-													<th class="span1">2013</th>
-													<th class="span4">Description</th>
-													<th class="span1 hidden-phone">Firefox</th>
-													<th class="span1 hidden-phone">Chrome</th>
-													<th class="span1 hidden-phone">Safari</th>
-													<th class="span1 hidden-phone">Opera</th>
-													<th class="span1 hidden-phone">IE8</th>
-													<th class="span1 hidden-phone">IE7</th>
-													<th class="span1 hidden-phone">IE6</th>
-												</tr>
-											</thead>
-										<tbody>
-										 <tr><td>a</td><td>a</td><td>a</td><td>a</td><td>a</td><td>a</td><td>a</td><td>a</td><td>a</td></tr>
-									</tbody>
-								</table>
-							</div>
+									<div class="well" id="step1" class="bwizard-activated" role="tabpanel" aria-hidden="false">
+										<form class="form-horizontal no-margin">
+											<div class="control-group">
+												<label class="control-label"> Document Name* </label>
+												<div class="controls controls-row width : 100px">
+														&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+														tomcat
+													
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label"> Description </label>
+												<div class="controls controls-row">
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+													tomcat
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label"> Uploaded Files </label>
+												<br><br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												home.png
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<a href="img/quick_navigation/home_icon.png">View</a>&nbsp;&nbsp;<a href="">Download</a>&nbsp;&nbsp;<a href="">Print</a>&nbsp;&nbsp;<a href="">Delete</a><br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												process.png
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												&nbsp;&nbsp;&nbsp;&nbsp;
+												<a href="img/quick_navigation/process_icon.png">View</a>&nbsp;&nbsp;<a href="">Download</a>&nbsp;&nbsp;<a href="">Print</a>&nbsp;&nbsp;<a href="">Delete</a><br>
+											</div>
+										</form>
+									</div>
+								</div>
+					
 						</div>
 					</div>		
 				</div>
@@ -548,8 +573,6 @@
 		</div>
 	</div>
 </div>
-
-	
 		<!-- dashboard-container -->
 	</div>
 	<!-- container-fluid -->
